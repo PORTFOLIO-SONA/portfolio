@@ -1,0 +1,81 @@
+/* ================================================================
+   RƏNGLƏR: aşağıdakı :root bloku saytın əsas rənglərini saxlayır.
+   --bg = fon, --text = mətn, --accent = vurğu rəngi (düymə, başlıq xətti)
+
+   HAZIR ALTERNATİV: tünd göy + qızılı. İstəsən aşağıdakı sətirləri
+   kopyalayıb :root blokundakı eyni adlı sətirlərin yerinə yaz:
+     --bg:#f6f7fb; --surface:#ffffff; --text:#14213d; --muted:#5b6478;
+     --accent:#b8892b; --line:#dfe3ee;
+   ================================================================ */
+:root{
+  --bg:#faf7f2;--surface:#fff;--text:#1f1b16;--muted:#6b645a;--accent:#c2410c;--line:#e7e0d5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17140f;--surface:#211d17;--text:#f2ede4;--muted:#a79f92;--accent:#fb923c;--line:#352f26;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17140f;--surface:#211d17;--text:#f2ede4;--muted:#a79f92;--accent:#fb923c;--line:#352f26;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px;flex-wrap:wrap}
+.logo{font-family:"DM Serif Display",Georgia,serif;font-size:22px;text-decoration:none}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{text-decoration:none;color:var(--muted);font-size:15px}
+nav ul a:hover{color:var(--accent)}
+.hero{padding:64px 0 52px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero small{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:clamp(40px,7.5vw,68px);margin:12px 0 16px}
+.hero p{max-width:600px;color:var(--muted);font-size:18px;margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:11px 22px;border-radius:99px;font-weight:600;font-size:15px}
+.btn.ghost{background:none;color:var(--text);border:1px solid var(--line);margin-left:8px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,38px);margin-bottom:8px}
+.lead{color:var(--muted);max-width:640px;margin:0 0 28px}
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:44px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.about h3{font-size:22px;margin:26px 0 10px}.about h3:first-child{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1px solid var(--line);background:var(--surface);padding:4px 12px;border-radius:99px;font-size:14px}
+.timeline{list-style:none;margin:0;padding:0 0 0 18px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 22px 18px}
+.timeline li::before{content:"";position:absolute;left:-26px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.timeline b{display:block}.timeline .d{color:var(--accent);font-size:13px;font-weight:600}
+.timeline p{margin:4px 0 0;color:var(--muted);font-size:14.5px;line-height:1.55}
+.certs{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px}.certs li{margin-bottom:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.work{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);transition:transform .15s}
+.work:hover{transform:translateY(-3px)}
+.work img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover}
+.notice{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:14px 18px;margin-bottom:28px;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;text-decoration:none;transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.tag{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-size:22px}.card p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.go{font-weight:600;font-size:14px}
+.contact a{color:var(--accent)}.contact p{margin:0 0 6px}
+footer{padding:30px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+
+/* ===== Pəncərə (lightbox / prezentasiya baxışı) ===== */
+.modal{position:fixed;inset:0;z-index:20;display:none;flex-direction:column;background:rgba(10,8,5,.88);padding:max(12px,env(safe-area-inset-top,0px)) 14px max(12px,env(safe-area-inset-bottom,0px))}
+.modal.open{display:flex}
+.modal-bar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;color:#fff;padding:4px 2px 10px;font-size:14px}
+.modal-bar .t{font-weight:600}.modal-bar .n{opacity:.8}
+.modal-bar a,.modal-bar button{background:#fff;color:#1f1b16;border:0;border-radius:99px;padding:7px 16px;font:600 14px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.modal-body{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.modal-body img{max-width:100%;max-height:100%;border-radius:10px}
+.modal-body iframe{width:100%;height:100%;border:0;border-radius:10px;background:#fff}
+
+/* ===== Giriş şəkli, bacarıq və əlaqə kartları ===== */
+.hero-photo{width:100%;max-width:380px;justify-self:end;aspect-ratio:1/1;object-fit:cover;object-position:50% 12%;border-radius:50%;border:6px solid var(--surface);box-shadow:0 10px 40px rgba(0,0,0,.15)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:40px}.hero-photo{order:-1;justify-self:start;max-width:200px}}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.skill-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.skill-card h3{font-size:20px;margin-bottom:12px}
+.skill-card .chips span{background:var(--bg)}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.contact-card{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;font-weight:500;transition:border-color .15s}
+.contact-card:hover{border-color:var(--accent)}

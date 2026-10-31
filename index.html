@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  MƏTNİ NECƏ DƏYİŞMƏLİ (VS Code-da Ctrl+F ilə axtar)
+  ------------------------------------------------------------
+  1. Giriş başlığı və mətni  -> "GİRİŞ" şərhini axtar
+  2. Tanışlıq və karyera      -> "1. HAQQIMDA"
+  3. Bacarıqlar               -> "2. BACARIQLAR"  (hər <span>...</span> bir bacarıqdır)
+  4. Canva şəkilləri          -> "3. ƏL İŞLƏRİM"  (şəkli images/ qovluğuna at, adını yaz)
+  5. Prezentasiya kartları    -> "4. LAYİHƏLƏR"   (bir <a class="card"> bloku = bir kart)
+  6. E-poçt, telefon, LinkedIn -> "ƏLAQƏ"
+  Rəngləri dəyişmək üçün style.css faylının ən yuxarısına bax.
+  ============================================================
+-->
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sona Rəsulova — Rəqəmsal Marketinq Mütəxəssisi</title>
+  <meta name="description" content="Sona Rəsulova — rəqəmsal marketinq mütəxəssisi. Karyera yolu, Canva işləri və müsahibə prezentasiyaları.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== MENYU ===== -->
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">Sona Rəsulova</a>
+      <ul>
+        <li><a href="#haqqimda">Haqqımda</a></li>
+        <li><a href="#bacariqlar">Bacarıqlar</a></li>
+        <li><a href="#el-isleri">Əl işlərim</a></li>
+        <li><a href="#layihələr">Layihələr</a></li>
+        <li><a href="#elaqe">Əlaqə</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== GİRİŞ ===== -->
+  <div class="wrap hero">
+    <div class="hero-text">
+      <small>Rəqəmsal marketinq mütəxəssisi · Bakı</small>
+      <!-- DƏYİŞ: başlıq və qısa təqdimat mətni -->
+      <h1>Salam, mən Sona.</h1>
+      <p>Kreativ məzmun tərtibatı və brend kampaniyalarının idarə olunması üzrə ixtisaslaşmışam. İngilis və ispan dillərini C1 səviyyəsində bilirəm.</p>
+      <a class="btn" href="#layihələr">Layihələrə bax</a><a class="btn ghost" href="#elaqe">Əlaqə</a>
+    </div>
+    <img class="hero-photo" src="images/sona.jpg" alt="Sona Rəsulova">
+  </div>
+
+  <!-- ===== 1. HAQQIMDA ===== -->
+  <section id="haqqimda">
+    <div class="wrap">
+      <h2>Haqqımda</h2>
+      <p class="lead">Marketinq kommunikasiyaları və rəqəmsal kanalların optimallaşdırılması vasitəsilə brendin inkişafına hədəflənmişəm. Tərcüməçilik təhsilindən rəqəmsal marketinqə keçən yolum aşağıdadır.</p>
+      <div class="about">
+        <div>
+          <h3>Dillər</h3>
+          <div class="chips">
+            <span>İngilis dili: C1 (IELTS 7.0)</span>
+            <span>İspan dili: C1 (DELE C1)</span>
+            <span>Azərbaycan dili</span>
+          </div>
+          <h3>Sertifikatlar və təlimlər</h3>
+          <ul class="certs">
+                <li>Marketoloqlar üçün Aİ təlimi: Baku Growth Academy (davam edir)</li>
+                <li>Marketinqdə Süni İntellekt təlimi: Asan İnnovativ İnkişaf Mərkəzi (2026)</li>
+                <li>PR və Kommunikasiya master klası: STİMUL academy (2026)</li>
+                <li>HubSpot ilə CRM-ə giriş: Coursera (2025)</li>
+                <li>Google Analytics 4 sertifikatı: Udemy (2025)</li>
+                <li>Google Ads sertifikatı: Video, Display, Search (2025)</li>
+                <li>Marketing 360 təlim sertifikatı: Azeraudit Consulting (2025)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Karyera yolu</h3>
+          <!-- DƏYİŞ: hər <li> bir iş yeridir (tarix, vəzifə, şirkət, təsvir) -->
+          <ul class="timeline">
+                <li>
+                    <span class="d">02.2026 – davam edir</span>
+                    <b>SMM frilans</b>
+                    Netvisio Marketinq Agentliyi
+                    <p>Meta Ads kampaniyalarının idarə olunması, auditoriya analizi, kontent planlaması, nəticələrin təhlili və hesabatlaşdırılması.</p>
+                </li>
+                <li>
+                    <span class="d">11.2025 – 01.2026</span>
+                    <b>Rəqəmsal marketoloq (SEO)</b>
+                    Corn Marketinq Agentliyi
+                    <p>Açar söz araşdırması, on-page və off-page SEO, texniki SEO və kontent optimizasiyası.</p>
+                </li>
+                <li>
+                    <span class="d">06.2025 – 11.2025</span>
+                    <b>Rəqəmsal Marketinq kursu</b>
+                    LTC LAB
+                    <p>WordPress, SEO/SEM strategiyaları, Google Ads və Meta Ads kampaniya idarəçiliyi.</p>
+                </li>
+                <li>
+                    <span class="d">10.2021 – davam edir</span>
+                    <b>Aparıcı mütəxəssis</b>
+                    Dövlət Sosial Müdafiə Fondu
+                    <p>Müəssisədaxili sosial ödənişlərə dair sənədlərin qeydiyyatı və tələb olunan qurumlara göndərilməsi.</p>
+                </li>
+                <li>
+                    <span class="d">2019 – 2021</span>
+                    <b>İspan dili müəllimi</b>
+                    <p>İspan dilinin qrammatikası və danışıq vərdişlərinin tədrisi.</p>
+                </li>
+                <li>
+                    <span class="d">2016 – 2020</span>
+                    <b>Tərcümə ixtisası (İspan / Azərbaycan)</b>
+                    Azərbaycan Dillər Universiteti
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. BACARIQLAR ===== -->
+  <section id="bacariqlar">
+    <div class="wrap">
+      <h2>Bacarıqlar</h2>
+      <p class="lead">Gündəlik işimdə istifadə etdiyim sahələr və alətlər.</p>
+      <div class="skill-grid">
+        <div class="skill-card"><h3>Reklam və kampaniya</h3><div class="chips"><span>Meta Ads Manager</span><span>Google Ads</span><span>SEO / SEM</span><span>Media Planning</span></div></div>
+        <div class="skill-card"><h3>Kontent və SMM</h3><div class="chips"><span>Content Planning</span><span>Instagram</span><span>LinkedIn</span><span>Kreativ məzmun</span></div></div>
+        <div class="skill-card"><h3>Analitika və hesabat</h3><div class="chips"><span>Google Analytics 4</span><span>Google Search Console</span><span>Looker Studio</span><span>KPI Tracking</span><span>Reporting &amp; Analytics</span></div></div>
+        <div class="skill-card"><h3>Alətlər</h3><div class="chips"><span>HubSpot CRM</span><span>WordPress / Wix</span><span>Microsoft Office</span><span>Canva</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. ƏL İŞLƏRİM ===== -->
+  <section id="el-isleri">
+    <div class="wrap">
+      <h2>Əl işlərim</h2>
+      <p class="lead">Canva-da hazırladığım postlar və vizuallar. Böyütmək üçün klik edin.</p>
+      <div class="grid">
+            <a class="work" href="images/work1.jpg" target="_blank" rel="noopener"><img src="images/work1.jpg" alt="Canva işi 1" loading="lazy"></a>
+            <a class="work" href="images/work2.jpg" target="_blank" rel="noopener"><img src="images/work2.jpg" alt="Canva işi 2" loading="lazy"></a>
+            <a class="work" href="images/work3.jpg" target="_blank" rel="noopener"><img src="images/work3.jpg" alt="Canva işi 3" loading="lazy"></a>
+            <a class="work" href="images/work4.jpg" target="_blank" rel="noopener"><img src="images/work4.jpg" alt="Canva işi 4" loading="lazy"></a>
+            <a class="work" href="images/work5.jpg" target="_blank" rel="noopener"><img src="images/work5.jpg" alt="Canva işi 5" loading="lazy"></a>
+            <a class="work" href="images/work6.jpg" target="_blank" rel="noopener"><img src="images/work6.jpg" alt="Canva işi 6" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. LAYİHƏLƏR ===== -->
+  <section id="layihələr">
+    <div class="wrap">
+      <h2>Layihələr</h2>
+      <div class="notice"><b>Qeyd:</b> Bu prezentasiyalar real iş prosesində deyil, müsahibə mərhələlərində şirkətlər üçün hazırladığım təqdimatlardır.</div>
+      <div class="cards">
+            <a class="card" href="presentations/socar-aqs.pdf" target="_blank" rel="noopener">
+                <span class="tag">SOCAR AQS</span>
+                <h3>The Faces Behind Energy</h3>
+                <p>Neftçilər Günü üçün daxili kommunikasiya kampaniyası: platforma və ofis əməkdaşları, kanallar, tədbir ssenarisi, büdcə və KPI.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/neptun-market.pdf" target="_blank" rel="noopener">
+                <span class="tag">Neptun Market</span>
+                <h3>SMM planı və kontent strategiyası</h3>
+                <p>Rəqib analizi, hədəf auditoriya, 7 günlük sosial media planı, hashtag strategiyası və KPI çərçivəsi.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/sr-logistics.pdf" target="_blank" rel="noopener">
+                <span class="tag">SR Logistics</span>
+                <h3>B2B SMM strategiyası</h3>
+                <p>Instagram səhifəsinin analizi, hədəf auditoriya, kontent istiqamətləri və Reels ideyaları.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/ielts-roadmap.pdf" target="_blank" rel="noopener">
+                <span class="tag">İELTS kursları</span>
+                <h3>Marketinq roadmap</h3>
+                <p>Məhsulun tanıdılması, müştərinin problem nöqtələri, reklam strategiyası və remarketinq.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/cx-assessment.pdf" target="_blank" rel="noopener">
+                <span class="tag">CX Specialist Assessment</span>
+                <h3>Səyahət sığortası</h3>
+                <p>Davranış əsaslı üç hipotez, müsahibə sualları və real tədqiqatın nəticələri.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/carpisa.pdf" target="_blank" rel="noopener">
+                <span class="tag">Carpisa</span>
+                <h3>Engagement üçün ideya</h3>
+                <p>Vizual kadr və psixoloji effektlərə əsaslanan sosial media ideyası.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/the-entertainer.pdf" target="_blank" rel="noopener">
+                <span class="tag">The Entertainer</span>
+                <h3>Engagement üçün ideya</h3>
+                <p>Neyromarketinq araşdırmalarına əsaslanan vizual ideya.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+            <a class="card" href="presentations/brand-analysis.pdf" target="_blank" rel="noopener">
+                <span class="tag">Brend təhlili</span>
+                <h3>Ted Baker, Machka, İpekyol</h3>
+                <p>Üç brendin sosial media təcrübəsi, BİO, highlights və vizual təkliflər.</p>
+                <span class="go">Prezentasiyaya bax →</span>
+            </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ƏLAQƏ ===== -->
+  <section id="elaqe">
+    <div class="wrap contact">
+      <h2>Əlaqə</h2>
+      <p class="lead">Əməkdaşlıq və ya sual üçün yazın.</p>
+      <!-- DƏYİŞ: e-poçt, telefon və sosial media linkləri -->
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:sonarasulova5@gmail.com"><span class="tag">E-poçt</span>sonarasulova5@gmail.com</a>
+        <a class="contact-card" href="tel:+994554144289"><span class="tag">Telefon</span>+994 55 414 42 89</a>
+        <a class="contact-card" href="https://www.linkedin.com/in/sona-rəsulova5321671ab" target="_blank" rel="noopener"><span class="tag">LinkedIn</span>Profilimə bax</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Sona Rəsulova</div>
+</footer>
+
+
+<!-- ===== POPUP PƏNCƏRƏ ===== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-bar">
+    <div><span class="t" id="mTitle"></span><br><span class="n" id="mNote"></span></div>
+    <div><a id="mOpen" href="#" target="_blank" rel="noopener">Yeni pəncərədə aç</a> <button id="mClose" type="button">Bağla ✕</button></div>
+  </div>
+  <div class="modal-body" id="mBody"></div>
+</div>
+
+<script>
+/* Kliklənəndə şəkil və ya prezentasiya saytın içində açılır. JS işləməsə, link yeni pəncərədə açılır. */
+(function(){
+  var m=document.getElementById("modal"),body=document.getElementById("mBody"),
+      title=document.getElementById("mTitle"),note=document.getElementById("mNote"),open=document.getElementById("mOpen");
+  function show(href,t,n,isPdf){
+    body.innerHTML="";
+    if(isPdf){var f=document.createElement("iframe");f.src=href;f.title=t;body.appendChild(f);}
+    else{var i=document.createElement("img");i.src=href;i.alt=t;body.appendChild(i);}
+    title.textContent=t;note.textContent=n||"";open.href=href;
+    m.classList.add("open");m.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";
+  }
+  function hide(){m.classList.remove("open");m.setAttribute("aria-hidden","true");body.innerHTML="";document.body.style.overflow="";}
+  document.querySelectorAll(".work").forEach(function(a){
+    a.addEventListener("click",function(ev){ev.preventDefault();show(a.getAttribute("href"),a.querySelector("img").alt,"",false);});
+  });
+  document.querySelectorAll(".card").forEach(function(a){
+    a.addEventListener("click",function(ev){ev.preventDefault();
+      show(a.getAttribute("href"),a.querySelector(".tag").textContent+": "+a.querySelector("h3").textContent,
+      "Müsahibə mərhələsində şirkət üçün hazırlanmış təqdimat (real iş prosesi deyil)",true);});
+  });
+  document.getElementById("mClose").addEventListener("click",hide);
+  m.addEventListener("click",function(ev){if(ev.target===m||ev.target===body)hide();});
+  document.addEventListener("keydown",function(ev){if(ev.key==="Escape")hide();});
+})();
+</script>
+
+</body>
+</html>
